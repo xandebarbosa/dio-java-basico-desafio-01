@@ -53,12 +53,8 @@ public class ContaTerminal {
 
         // Exibição das informações da conta
         System.out.println("********************************");
-        System.out.println("Conta criada com sucesso!");
-        System.err.println("Número da conta: " + conta.getNumero());
-        System.out.println("Agência: " + conta.getAgencia());
-        System.out.println("Nome do Cliente: " + conta.getNomeCliente());
-        System.out.println("Saldo: " + conta.getSaldo());
-       
+        System.out.println("Olá " + conta.getNomeCliente() + ", obrigado por criar uma conta em nosso banco, sua agência é " + conta.getAgencia() + ", conta " + conta.getNumero() + " e seu saldo R$ " + conta.getSaldo() + " já está disponível para saque.");
+        
         //Fechando o Scanner
         scanner.close();
     }
